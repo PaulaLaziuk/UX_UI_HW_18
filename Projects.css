@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,500;1,800&family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
 html {
-    font-family: "Patrick Hand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
 }
 
@@ -15,9 +15,9 @@ html {
 }
 
 li, a, button {
-    font-family: "Patrick Hand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     text-decoration:none;
 }
@@ -29,6 +29,7 @@ header {
     padding: 20px 10%;
     background-color: white;
     border-bottom: 3px #373F47 solid;
+    background-image: url(./images/IMG_2015.png);
 }
 
 .logo {
@@ -53,6 +54,7 @@ nav {
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    color:white;
 }
 
 .nav_links li a:hover {
@@ -75,15 +77,16 @@ button {
 }
 
 button:hover {
-    background-color: #6E8EA7;
-    border: 1px #6E8EA7 solid;
-    color: white;
+    background-color: white;
+    border: 1px white solid;
+    color: black;
+    font-weight: 400;
 }
 
 /*body styling*/
 
 .my_projects{
-    background-color: #6E8EA7;
+    /*background: url(./images/kevin-borrill-7_N1zLrY7ns-unsplash.jpg) no-repeat center / cover;*/
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -92,10 +95,12 @@ button:hover {
     align-items: center;
     justify-content: center;
     font-family: "Nunito";
+    background-color: #244B74;
 }
 
-.my_projects h2{
-    text-transform: uppercase;
+.my_projects h1{
+    color: white;
+    font-weight: 100;
 }
 
 .project1{
@@ -103,21 +108,25 @@ button:hover {
     flex-direction: row;
     height: 400px;
     background-color: white;
-    margin: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     position: relative;
     border-radius: 25px;
     box-shadow: 0px 4px rgba(0,0,0,0.7);
+    max-width: 80%;
 }
 
 .project1 .image_container{
     width: 50%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url(./images/smartmockups_l5piuka1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px 0 0 25px;
 }
 
 .project1 img{
-    width: 17.5rem;
+    width: 20rem;
+    opacity: 0;
 }
 
 .project1 .project1desc{
@@ -127,8 +136,17 @@ button:hover {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    background-color: #244B74;
+    background-color: rgb(255, 255, 255);
     border-radius: 0 25px 25px 0;
+    text-align: left;
+}
+
+.project1 .project1desc h2{
+    margin-bottom: 20px;
+}
+
+.project1 .project1desc p{
+    min-width:4px;
 }
 
 .project2{
@@ -136,10 +154,11 @@ button:hover {
     flex-direction: row;
     height: 400px;
     background-color: white;
-    margin: 5%;
+    margin-bottom: 5%;
     position: relative;
     border-radius: 25px;
     box-shadow: 0px 4px rgba(0,0,0,0.7);
+    max-width: 80%;
 }
 
 .project2 .image_container{
@@ -147,6 +166,7 @@ button:hover {
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow:hidden
 }
 
 .project2 img{
@@ -160,8 +180,13 @@ button:hover {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    background-color: #244B74;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px 0 0 25px;
+    text-align: left;
+}
+
+.project2 .project2desc h2{
+    margin-bottom: 20px;
 }
 
 .project3{
@@ -169,10 +194,11 @@ button:hover {
     flex-direction: row;
     height: 400px;
     background-color: white;
-    margin: 5%;
+    margin-bottom: 5%;
     position: relative;
     border-radius: 25px;
     box-shadow: 0px 4px rgba(0,0,0,0.7);
+    max-width: 80%;
 }
 
 .project3 .image_container{
@@ -180,61 +206,46 @@ button:hover {
     display:flex;
     align-items: center;
     justify-content: center;
+    background-image: url(./images/smartmockups_l5pipida.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px 0 0 25px;
 }
 
 .project3 img{
-    width: 17.5rem;
+    width: 20rem;
+    opacity: 0;
 }
 
 .project3 .project3desc{
     width: 50%;
+    /*min-width: 472px;*/
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5%;
-    background-color: #244B74;
+    background-color: rgb(255, 255, 255);
     border-radius: 0 25px 25px 0;
+    text-align: left;
 }
 
-/*.my_projects .project1{
-    height: 400px;
-    width: 30%;
-    background-color: white;
-    margin: 5%;
-    padding: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
+.project3 .project3desc h2{
+    margin-bottom: 20px;
 }
 
-.my_projects .project2 {
-    height: 400px;
-    width: 30%;
-    background-color: white;
-    margin: 5%;
-    padding: 5%;
-    position: relative;
+.seeMore h4{
+    font-size:24px;
+    margin-bottom: 1rem;
+    cursor:pointer;
+    color: white;
+    font-weight: 100;
 }
-
- 
-.my_projects .project3 {
-    height: 400px;
-    width: 30%;
-    background-color: white;
-    margin: 5%;
-    padding: 5%;
-    position: relative;
+.seeMore img{
+    height:2rem;
+    cursor:pointer;
 }
-
-.my_projects .overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.4);
-}*/
-
-
 
 /* footer style */
 
@@ -246,6 +257,7 @@ button:hover {
     padding: 5%;
     border-top: 3px #373F47 solid;
     background-color: white;
+    background-image: url(./images/IMG_2015.png);
 }
 
 .footer-container p {
@@ -255,7 +267,6 @@ button:hover {
 
 .footer_links {
     list-style: none;
-    background-color: white;
     border-radius: 20px;
     /*padding-top: 0.5em;*/
     /*border: 3px #373F47 solid;*/
@@ -288,19 +299,20 @@ button:hover {
     margin-top: 1rem;
     padding: 5px;
     border: 3px #373F47 solid;
-    background-color: white;
     border-radius: 20px;
 }
 
-@media screen and (max-width: 990px){
-    .container{
+/*@media screen and (max-width: 990px){
+    .my_projects{
+        display: flex;
+        flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
 }
 
 @media screen and (max-width: 650px){
-    .container{
+    .my_projects{
         grid-template-columns: 1fr;
         padding: 2rem 50px;
     }
@@ -310,4 +322,4 @@ button:hover {
     .project1{
         flex-direction: column; 
     }
-}
+}*/

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,500;1,800&family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
 html {
-    font-family: "Patrick Hand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
 }
 
@@ -15,9 +15,9 @@ html {
 }
 
 li, a, button {
-    font-family: "Patrick Hand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     text-decoration:none;
 }
@@ -35,7 +35,7 @@ header {
     cursor: pointer;
     order: 1;
     margin-right: 30px;
-    height: 5rem;
+    height: 3.5rem;
 }
 
 nav {
@@ -137,13 +137,24 @@ button:hover {
 
 .seeMyWork{
     display: flex;
-    text-align: center;
-
+    flex-direction: column;
+    align-items: center;
 }
-.myWork a{
+
+.seeMyWork a{
     font-family: "Nunito";
     color: white;
+    font-weight: 100;
 }
+
+.workArrow{
+    margin-top: 20px;
+}
+.workArrow img{
+    height:1.5rem;
+}
+
+
 
 /*.container .info h3 {
     font-size: 1.2rem;

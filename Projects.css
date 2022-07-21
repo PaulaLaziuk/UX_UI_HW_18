@@ -36,7 +36,7 @@ header {
     cursor: pointer;
     order: 1;
     margin-right: 30px;
-    height: 5rem;
+    height: 3.5rem;
 }
 
 nav {
@@ -87,7 +87,6 @@ button:hover {
 
 .my_projects{
     /*background: url(./images/kevin-borrill-7_N1zLrY7ns-unsplash.jpg) no-repeat center / cover;*/
-    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     display:flex;
@@ -101,6 +100,7 @@ button:hover {
 .my_projects h1{
     color: white;
     font-weight: 100;
+    margin: 5%;
 }
 
 .project1{
@@ -109,10 +109,11 @@ button:hover {
     height: 400px;
     background-color: white;
     margin-bottom: 5%;
-    margin-top: 5%;
     position: relative;
     border-radius: 25px;
-    box-shadow: 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
     max-width: 80%;
 }
 
@@ -157,7 +158,9 @@ button:hover {
     margin-bottom: 5%;
     position: relative;
     border-radius: 25px;
-    box-shadow: 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
     max-width: 80%;
 }
 
@@ -197,7 +200,9 @@ button:hover {
     margin-bottom: 5%;
     position: relative;
     border-radius: 25px;
-    box-shadow: 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
     max-width: 80%;
 }
 

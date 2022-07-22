@@ -225,6 +225,7 @@ body{
     padding: 5%;
     border-top: 3px #373F47 solid;
     background-image: url(./images/IMG_2015.png);
+    height:8rem;
 }
 
 .footer-container p {

@@ -199,6 +199,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3%;
 }
 
 .proj1_img img{
@@ -265,8 +266,7 @@ button:hover {
 }
 
 .proj2_img img{
-    width: 100%;
-    min-width: 281px;
+    height: 80%;
 }
 
 .proj2_text{
@@ -296,7 +296,7 @@ button:hover {
     font-size: 16px;
     font-weight: 100;
     margin-top: 1%;
-    padding: 1%;
+    padding: 3%;
 }
 
 .project3{
@@ -326,11 +326,12 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 5px 5px 0 0;
+    padding: 1%;
 }
 
 .proj3_img img{
-width:100%;
-
+    width:100%;
+    min-width: 281px;
 }
 
 .proj3_text{
@@ -360,7 +361,7 @@ width:100%;
     font-size: 16px;
     font-weight: 100;
     margin-top: 1%;
-    padding: 1%;
+    padding: 3%;
 }
 /* footer style */
 
@@ -370,6 +371,7 @@ width:100%;
     align-items: center;
     justify-content: center;
     padding: 5%;
+    height:8rem;
     /*border-top: 3px #373F47 solid;*/
 }
 

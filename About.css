@@ -66,7 +66,6 @@ nav {
     order:3;
 }
 button {
-    margin-left: 20px;
     padding: 10px 25px;
     background-color: #244B74;
     border: 1px #244B74 solid;
@@ -87,14 +86,14 @@ button:hover {
 
 body{
     font-family: "Nunito", sans-serif;
+  
 }
 
 .about-wrapper{
-    height:100vh;
 }
 
 .about-left{
-    background-color: #6E8EA7;
+    background-color: #244B74;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -106,12 +105,14 @@ body{
     background-color: #657C9A;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
+    border-radius: 25px;
 }
 
 .about-left-content{
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
     -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    border-radius: 25px;
 }
 
 .about-img img{
@@ -143,6 +144,7 @@ body{
     cursor: pointer;
 }
 
+
 .shadow::after{
     content:'';
     position: absolute;
@@ -172,6 +174,8 @@ body{
     line-height: 1.2;
     padding-bottom: 1 rem;
     border-bottom: 2px solid white;
+    font-weight: 100;
+    padding-bottom: 10px;
 }
 
 .about-left-content h3{
@@ -179,9 +183,10 @@ body{
     font-weight: 300;
     letter-spacing: 5px;
     margin-top: 1.2rem;
+    font-weight: 100;
 }
 
-.icons{
+/* .icons{
     background: #fff;
     display: flex;
     justify-content: center;
@@ -207,7 +212,7 @@ body{
 .icons li:hover{
     background: white;
     color: black;
-}
+} */
 
 .about-right{
     background: white;
@@ -222,16 +227,20 @@ body{
 
 .about-right h1{
     font-size: 5rem;
+    font-weight: 100;
 }
 
 .about-right h2{
     font-weight: 600;
     padding-bottom: 1.5rem;
+    font-weight: 100;
 }
 
 .about-btns{
+    margin-top: 20px;
     display: flex;
-    margin: 2 rem 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
@@ -296,9 +305,6 @@ body{
 
 footer{
     position:relative;
-    bottom:0;
-    left:0;
-    right:0;
     width: 100%;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -311,6 +317,7 @@ footer{
     justify-content: center;
     padding: 5%;
     border-top: 3px #373F47 solid;
+    height:8rem;
 }
 
 .footer-container p {
@@ -321,8 +328,8 @@ footer{
 .footer_links {
     list-style: none;
     border-radius: 20px;
-    /*padding-top: 0.5em;*/
-    /*border: 3px #373F47 solid;*/
+    padding-top: 0.5em;
+    *border: 3px #373F47 solid;
 }
 
 .footer_links li {
